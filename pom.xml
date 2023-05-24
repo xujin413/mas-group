@@ -5,6 +5,7 @@
     <modules>
         <module>mas-test</module>
         <module>mas-service</module>
+        <module>mas-repository</module>
     </modules>
 
     <parent>
