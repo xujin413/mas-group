@@ -11,8 +11,6 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <!--        <version>2.1.6.RELEASE</version>-->
-        <!--        <version>2.3.2.RELEASE</version>-->
         <version>2.3.12.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
@@ -30,52 +28,25 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- spring -->
-        <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
-        <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
         <spring-context.version>5.3.1</spring-context.version>
         <spring-core.version>4.3.16.RELEASE</spring-core.version>
-        <jedis.version>2.9.3</jedis.version>
         <spring-webmvc.version>5.3.1</spring-webmvc.version>
         <spring-web.version>5.3.1</spring-web.version>
         <spring-context-support.version>1.0.11</spring-context-support.version>
 
-        <!-- common 可能没啥用了？？？-->
-        <mcp-common.groupId>com.bonc.ioc</mcp-common.groupId>
-        <mcp-common.artifactId>mcp-common</mcp-common.artifactId>
-        <mcp-common.version>1.1.11-SNAPSHOT</mcp-common.version>
+        <!-- spring cloud -->
+        <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
 
-        <!-- common 权限 -->
-        <mcp-security.groupId>com.bonc.ioc</mcp-security.groupId>
-        <mcp-security.artifactId>mcp-security-shiro</mcp-security.artifactId>
-        <mcp-security.version>1.0.1-SNAPSHOT</mcp-security.version>
+        <!-- spring boot -->
+        <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
 
-        <!-- common 接口文档 -->
-        <mcp-doc.groupId>com.bonc.ioc</mcp-doc.groupId>
-        <mcp-doc.artifactId>mcp-doc-swagger</mcp-doc.artifactId>
-        <mcp-doc.version>1.0.1-SNAPSHOT</mcp-doc.version>
+        <!-- mybatis -->
+        <mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
+        <mybatis-plus-boot-starter.version>3.4.1</mybatis-plus-boot-starter.version>
+        <mybatis-plus-generator.version>3.4.1</mybatis-plus-generator.version>
 
-        <!-- common 日志 -->
-        <mcp-log.groupId>com.bonc.ioc</mcp-log.groupId>
-        <mcp-log.artifactId>mcp-log-logback</mcp-log.artifactId>
-        <mcp-log.version>1.0.1-SNAPSHOT</mcp-log.version>
-
-        <!-- common 授权 -->
-        <mcp-license.groupId>com.bonc.ioc</mcp-license.groupId>
-        <mcp-license.artifactId>mcp-license-client</mcp-license.artifactId>
-        <mcp-license.version>1.0.1-SNAPSHOT</mcp-license.version>
-
-        <!-- common 数据源 -->
-        <mcp-database.version>com.bonc.ioc</mcp-database.version>
-        <mcp-database.artifactId>mcp-database-mysql</mcp-database.artifactId>
-        <mcp-database.version>1.0.0-SNAPSHOT</mcp-database.version>
-
-        <!-- common 微服务 -->
-        <mcp-cloud.version>com.bonc.ioc</mcp-cloud.version>
-        <mcp-cloud.artifactId>mcp-common-alibaba</mcp-cloud.artifactId>
-        <mcp-cloud.version>1.1.10-SNAPSHOT</mcp-cloud.version>
-
-        <!-- common 核心包 -->
-        <mcp-common-core.version>1.1.11-SNAPSHOT</mcp-common-core.version>
+        <!-- 数据源 -->
+        <druid.version>1.2.1</druid.version>
 
         <!-- alibaba -->
         <spring-cloud-alibaba-dependencies.version>2.2.5.RELEASE</spring-cloud-alibaba-dependencies.version>
@@ -85,11 +56,18 @@
         </spring-cloud-starter-alibaba-nacos-config.version>
         <nacos-client.version>1.4.1</nacos-client.version>
 
+        <!-- 缓存 -->
+        <jedis.version>2.9.3</jedis.version>
+
         <!-- 接口文档 -->
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
         <springfox-swagger-ui.version>2.9.2</springfox-swagger-ui.version>
         <swagger-bootstrap-ui.version>1.9.6</swagger-bootstrap-ui.version>
         <knife4j-spring-boot-starter.version>2.0.5</knife4j-spring-boot-starter.version>
+
+        <!-- 接口 -->
+        <dubbo-registry-nacos.version>2.6.12</dubbo-registry-nacos.version>
+        <dubbo.version>2.6.12</dubbo.version>
 
         <!-- 日志 -->
         <!-- log4j2 必须2.17 及其以上 低版本存在漏洞风险 -->
@@ -97,22 +75,7 @@
         <slf4j-api.version>1.7.7</slf4j-api.version>
         <logback.version>1.2.3</logback.version>
 
-        <!-- 代码检查 -->
-        <findbugs-maven-plugin.version>3.0.4</findbugs-maven-plugin.version>
-        <findbugs-maven-plugin.effort>Medium</findbugs-maven-plugin.effort>
-        <findbugs-maven-plugin.threshold>Medium</findbugs-maven-plugin.threshold>
-
-        <mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
-        <fastjson.version>1.2.58</fastjson.version>
-        <druid.version>1.2.1</druid.version>
-        <lombok.version>1.18.8</lombok.version>
-        <commons-lang3.version>3.11</commons-lang3.version>
-        <commons-collections4.version>4.2</commons-collections4.version>
-        <mybatis-plus-boot-starter.version>3.4.1</mybatis-plus-boot-starter.version>
-
-        <dubbo-registry-nacos.version>2.6.12</dubbo-registry-nacos.version>
-        <dubbo.version>2.6.12</dubbo.version>
-
+        <!-- 文档处理 -->
         <poi.version>4.1.2</poi.version>
         <poi-ooxml.version>4.1.2</poi-ooxml.version>
         <fr.opensagres.poi.xwpf.converter.pdf-gae.version>2.0.2</fr.opensagres.poi.xwpf.converter.pdf-gae.version>
@@ -120,12 +83,23 @@
         <poi-ooxml-schemas.version>4.1.2</poi-ooxml-schemas.version>
         <poi-scratchpad.version>4.1.2</poi-scratchpad.version>
 
+        <!-- 通用包 -->
+        <fastjson.version>1.2.58</fastjson.version>
+        <lombok.version>1.18.8</lombok.version>
+        <commons-lang3.version>3.11</commons-lang3.version>
+        <commons-collections4.version>4.2</commons-collections4.version>
+
+        <!-- 权限 -->
         <shiro-spring.version>1.4.0</shiro-spring.version>
         <shiro-redis.version>2.4.2.1-RELEASE</shiro-redis.version>
 
-        <tomcat-embed-core.version>9.0.39</tomcat-embed-core.version>
+        <!-- 代码检查 -->
+        <findbugs-maven-plugin.version>3.0.4</findbugs-maven-plugin.version>
+        <findbugs-maven-plugin.effort>Medium</findbugs-maven-plugin.effort>
+        <findbugs-maven-plugin.threshold>Medium</findbugs-maven-plugin.threshold>
 
-        <mybatis-plus-generator.version>3.4.1</mybatis-plus-generator.version>
+        <!-- 其他 -->
+        <tomcat-embed-core.version>9.0.39</tomcat-embed-core.version>
         <velocity-engine-core.version>2.0</velocity-engine-core.version>
         <p6spy.version>3.8.2</p6spy.version>
         <jts-core.version>1.18.0</jts-core.version>
@@ -146,8 +120,8 @@
                     <failOnError>true</failOnError>
                     <includeTests>true</includeTests>
                     <!--findbugs需要忽略的错误的配置文件-->
-<!--                    <excludeFilterFile>findbugs-exclude-filter.xml-->
-<!--                    </excludeFilterFile>-->
+                    <!--                    <excludeFilterFile>findbugs-exclude-filter.xml-->
+                    <!--                    </excludeFilterFile>-->
                 </configuration>
                 <executions>
                     <execution>
