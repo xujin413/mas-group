@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <!-- 2023年8月30日 -->
+        <!-- 2023年9月8日 -->
         <module>mas-test</module>
         <module>mas-service</module>
         <module>mas-repository</module>
